@@ -1,0 +1,6 @@
+from typing import Protocol, Sequence
+from app.domain.entities import Cliente
+
+class ClienteRepository(Protocol):
+    def crear(self, cliente: Cliente) -> Cliente: ...
+    def listar(self) -> Sequence[Cliente]: ...

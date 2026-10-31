@@ -1,0 +1,27 @@
+# Variables de entorno (mantener .env.example)
+.env
+.env.*
+!.env.example
+
+# Bases de datos y archivos locales
+*.db
+*.sqlite
+*.sqlite3
+
+# Entornos y cachés de Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editores y sistema operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
