@@ -1,5 +1,3 @@
-# Las 3 pruebas de integracion que pide la guia (rutas -> logica -> base de datos).
-
 def test_crear_y_consultar_producto(client):
     r = client.post("/api/v1/productos",
                     json={"nombre": "Camisa", "precio": 50000})
