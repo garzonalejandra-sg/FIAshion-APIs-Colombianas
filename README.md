@@ -1,6 +1,6 @@
 # FIAshion — APIs Colombianas
 
-API REST para la tienda virtual FIAshion. Conserva el CRUD de productos y clientes, consulta departamentos/municipios mediante DIVIPOLA y complementa la ubicación de los clientes con códigos postales mediante API Colombia. No incluye integración de IA, DANE ni TerriData.
+API REST para la tienda virtual de FIAshion. Conserva el CRUD de productos y clientes, consulta departamentos/municipios mediante DIVIPOLA y complementa la ubicación de los clientes con códigos postales mediante API Colombia. No incluye integración de IA, DANE ni TerriData.
 
 ## Tecnologías
 - Python, FastAPI y Pydantic
@@ -56,5 +56,5 @@ Ejemplo de registro de cliente:
 ## Compatibilidad de base de datos
 Al iniciar, la aplicación agrega la columna opcional `codigo_postal` a la tabla `clientes` si la base SQLite existente todavía no la tiene. No elimina los registros existentes. Para conservar datos de una instalación anterior, copie su archivo `fiashion.db` a esta carpeta antes de iniciar el proyecto.
 
-## Pruebas
+## Pruebas.
 Desde la terminal, ejecute `pytest -q`. Las pruebas simulan las respuestas de API Colombia; no requieren conexión externa. La disponibilidad real de los servicios externos depende de la conexión a Internet y de los proveedores.
